@@ -10,4 +10,13 @@ class StaticPagesController < ApplicationController
 
 	def contact
 	end
+
+	def derp
+	end
+
+	def saiyan	
+	end
+
+	def frieza
+	end
 end
