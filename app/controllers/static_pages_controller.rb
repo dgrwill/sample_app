@@ -19,4 +19,10 @@ class StaticPagesController < ApplicationController
 
 	def frieza
 	end
+
+	def cell
+	end
+
+	def goku
+	end
 end

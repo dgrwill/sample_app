@@ -86,7 +86,8 @@ describe "Static pages" do
 	end
 
 	describe "Frieza page" do
-		it "should ahve the content 'Frieza'" do
+
+		it "should have the content 'Frieza'" do
 			visit '/static_pages/frieza'
 			expect(page).to have_content('Frieza')
 		end
@@ -94,6 +95,32 @@ describe "Static pages" do
 		it "should have the title 'Frieza'" do
 			visit '/static_pages/frieza'
 			expect(page).to have_title("Ruby on Rails Tutorial Sample App | Frieza")
+		end
+	end
+
+	describe "Cell page" do
+
+		it "should have the content 'Cell'" do
+			visit '/static_pages/cell'
+			expect(page).to have_content('Cell')
+		end
+
+		it "should have the title 'Cell'" do
+			visit '/static_pages/cell'
+			expect(page).to have_title("Ruby on Rails Tutorial Sample App | Cell")
+		end
+	end
+
+	describe "Goku page" do
+	
+		it "should have the content 'Goku'" do
+			visit '/static_pages/goku'
+			expect(page).to have_content('Goku')
+		end
+
+		it "should have the title 'Goku'" do
+			visit '/static_pages/goku'
+			expect(page).to have_title("Ruby on Rails Tutorial Sample App | Goku")
 		end
 	end
 end
