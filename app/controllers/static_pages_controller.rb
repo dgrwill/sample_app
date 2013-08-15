@@ -25,4 +25,10 @@ class StaticPagesController < ApplicationController
 
 	def goku
 	end
+
+	def gohan
+	end
+	
+	def piccolo
+	end
 end

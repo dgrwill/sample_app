@@ -123,4 +123,30 @@ describe "Static pages" do
 			expect(page).to have_title("Ruby on Rails Tutorial Sample App | Goku")
 		end
 	end
+
+	describe "Gohan page" do
+	
+		it "should have the content 'Gohan'" do
+			visit '/static_pages/gohan'
+			expect(page).to have_content('Gohan')
+		end
+
+		it "should have the title 'Gohan'" do
+			visit '/static_pages/gohan'
+			expect(page).to have_title("Ruby on Rails Tutorial Sample App | Gohan")
+		end
+	end
+
+	describe "Piccolo page" do
+		
+		it "should have the content 'Piccolo'" do
+			visit '/static_pages/piccolo'
+			expect(page).to have_content('Piccolo')
+		end
+
+		it "should have the title 'Piccolo'" do
+			visit '/static_pages/piccolo'
+			expect(page).to have_title("Ruby on Rails Tutorial Sample App | Piccolo")
+		end
+	end
 end
